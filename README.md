@@ -1,0 +1,2 @@
+# BrightSteps
+BrightSteps is an accessible, gamified web app helping seniors build digital confidence through interactive simulations. Learn web browsers, Apple iOS, Google Workspace, photo organizing, scam defense, and generative AI prompt engineering through bite-sized, untimed challenges featuring gentle audio cues, memory cards, and collectible badges.
