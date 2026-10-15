@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8FAFC;
+    color: #0F172A;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  .font-mono-num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes cinemaPan {
+  0% {
+    transform: scale(1.02) translateX(0%);
+  }
+  50% {
+    transform: scale(1.1) translateX(-2%);
+  }
+  100% {
+    transform: scale(1.02) translateX(0%);
+  }
+}
+
+@keyframes cinemaZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.14);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-cinema-pan {
+  animation: cinemaPan 8s ease-in-out infinite;
+}
+
+.animate-cinema-zoom {
+  animation: cinemaZoom 7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-cinema-pan,
+  .animate-cinema-zoom {
+    animation: none;
+  }
+}

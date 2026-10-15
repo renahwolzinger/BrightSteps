@@ -1,0 +1,6 @@
+{
+  "name": "BrightSteps Senior Tech & AI Academy",
+  "description": "A visual, gamified learning adventure designed for seniors to master digital security, iPhone skills, family photos, everyday AI, and creative AI images and videos across three skill levels.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
