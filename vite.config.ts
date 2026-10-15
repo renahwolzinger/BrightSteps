@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    Base: '/BrightSteps/'
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
